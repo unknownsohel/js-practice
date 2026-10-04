@@ -30,12 +30,12 @@ console.log(typeof newArr);
 //slice splice
 console.log("A ", myArr2);
 
-const myn1 = myArr2.slice(1,3);
+const myn1 = myArr2.slice(1,3);// does not change the original array
 
 console.log("myn1 ", myn1);
 console.log("B ", myArr2);
 
 
-const myn2 = myArr2.splice(1,3);
+const myn2 = myArr2.splice(1,3); // changes the original array
 console.log("myn2 ", myn2);
 console.log("C ", myArr2);
