@@ -18,3 +18,10 @@ console.log(arr.flat(1));
 console.log(Array.isArray("Sohel"));
 console.log(Array.from("Sohel"));   
 console.log(Array.from({name:"Sohel"})); // returns an empty array because the object does not have a length property
+
+
+let score1 =100;
+let score2 =200;
+let score3 =300;
+
+console.log(Array.of(score1,score2,score3));
