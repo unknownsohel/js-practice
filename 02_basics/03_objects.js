@@ -23,16 +23,18 @@ console.log(JUser[mySym]);
 
 JUser.email="sohel_new@example.com";
 console.log(JUser.email);
-//object.freeze(JUser); // freeze the object so that it cannot be modified
+//Object.freeze(JUser); // freeze the object so that it cannot be modified
 JUser.email="sohel_frozen@example.com"; // This will not modify the object
 console.log(JUser.email);
 
 JUser.greet=function(){
     console.log("hello JS user");
-}
+};
 
-console.log(JUser.greet()); // This will throw an error because the object is frozen and cannot be modified
+console.log(JUser.greet()); 
 
-JUser.greeting=function{
-    console.log('Hello JS user, ${this.name}')
-}
+JUser.greeting=function(){
+    console.log(`Hello JS user, ${this.name}`);
+};
+
+console.log(JUser.greeting()); 
